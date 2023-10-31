@@ -4,7 +4,7 @@
 
 O backend do "Guina News - Portal de Notícias Fullstack" é a parte essencial que alimenta e gerencia todas as operações nos bastidores deste projeto. É a infraestrutura robusta que fornece autenticação, gerenciamento de dados e lógica de negócios para a aplicação, garantindo sua funcionalidade e segurança.
 
-![Exemplo de Imagem](./src/001.jpg)
+![Exemplo de Imagem](./src/assets/001.jpg)
 
 ## Tecnologias Utilizadas
 
