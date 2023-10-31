@@ -27,7 +27,7 @@ O backend do "Guina News - Portal de Notícias Fullstack" é a parte essencial q
 
 1. Clone o repositório para o seu ambiente local:
 
-         git clone https://github.com/seuusuario/seurepositorio.git
+         git clone https://github.com/AguinaldoBorges/guinanews-back.git
 
 
 2. Instale as dependências do Node.js:
