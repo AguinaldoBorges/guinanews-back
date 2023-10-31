@@ -39,6 +39,7 @@ O backend do "Guina News - Portal de Notícias Fullstack" é a parte essencial q
          npm start
 
 O backend estará acessível em `http://localhost:4000`.
+A documentação estará disponível em `http://localhost:4000/api-docs/`
 
 ## Contribuições
 
