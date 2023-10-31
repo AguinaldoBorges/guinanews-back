@@ -4,6 +4,8 @@
 
 O backend do "Guina News - Portal de Notícias Fullstack" é a parte essencial que alimenta e gerencia todas as operações nos bastidores deste projeto. É a infraestrutura robusta que fornece autenticação, gerenciamento de dados e lógica de negócios para a aplicação, garantindo sua funcionalidade e segurança.
 
+![Exemplo de Imagem](./src/001.jpg)
+
 ## Tecnologias Utilizadas
 
 - **Node.js:** O backend é construído em Node.js, aproveitando a velocidade e escalabilidade dessa plataforma de execução.
@@ -39,7 +41,8 @@ O backend do "Guina News - Portal de Notícias Fullstack" é a parte essencial q
          npm start
 
 O backend estará acessível em `http://localhost:4000`.
-A documentação estará disponível em `http://localhost:4000/api-docs/`
+
+A documentação estará disponível em `http://localhost:4000/api-docs/`.
 
 ## Contribuições
 
