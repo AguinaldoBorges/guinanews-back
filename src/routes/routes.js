@@ -6,6 +6,22 @@ const { listarPosts, criarPost, buscarUmPost, alterarPost, excluirPost } = requi
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('../swaggerDef.js');
 const jwt = require('jsonwebtoken');
+const { enviarArquivo } = require('../controlers/arquivos.js');
+const multer = require('multer');
+const path = require('path');
+
+/* Multer */
+// Configuração do Multer
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'src/uploads/'); // O diretório onde os arquivos serão armazenados
+    },
+    filename: function (req, file, cb) {
+        cb(null, Date.now() + path.extname(file.originalname)); // Nome do arquivo no formato timestamp + extensão original
+    }
+});
+
+const uploadFile = multer({ storage: storage });
 
 
 route.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
@@ -491,6 +507,11 @@ route.get('/categorias/:id', buscarUmCategorias);
 route.post('/categorias', verificarAutenticacao, criarCategorias);
 route.put('/categorias/:id', verificarAutenticacao, alterarCategorias);
 route.delete('/categorias/:id', verificarAutenticacao, excluirCategorias);
+
+
+/* Arquivos */
+route.post('/upload', uploadFile.single('arquivo'), enviarArquivo);
+
 
 
 module.exports = { route }
